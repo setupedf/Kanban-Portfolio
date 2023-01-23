@@ -1,0 +1,94 @@
+.main-kanban {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 35px;
+}
+
+.main-kanban-column {
+    padding: 10px;
+    border-radius: 4px 4px 4px 4px;
+    border-top: 5px solid rgba(0, 0, 0, 0.1);
+}
+
+.main-kanban-column:nth-child(1) {
+    background: #59B4D1;
+}
+
+.main-kanban-column:nth-child(2) {
+    background: #D0935A;
+}
+
+.main-kanban-column:nth-child(3) {
+    background: #945AD1;
+}
+
+.main-kanban-column:nth-child(4) {
+    background: #59D090;
+}
+
+.main-kanban-column-title {
+    margin-bottom: 10px;
+}
+
+.main-kanban-column-title-text {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: -0.02em;
+    color: #FFFFFF;
+}
+
+#last-column-header {
+    color: #111;
+}
+
+.main-kanban-column-title-text-emoji {
+    margin-right: 10px;
+}
+
+.main-kanban-column-list {
+    display: grid;
+    row-gap: 10px;
+}
+
+.main-kanban-column-list-item {
+    padding: 15px 10px;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+}
+
+.main-kanban-column-list-item-header {
+    margin-bottom: 10px;
+}
+
+.main-kanban-column-list-item-header-text {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: -0.02em;
+    color: #171717;
+}
+
+.main-kanban-column-list-item-footer {
+    display: flex;
+}
+
+.main-kanban-column-list-item-footer-img {
+    min-width: 20px;
+    min-height: 20px;
+    margin-right: 10px;
+}
+
+.main-kanban-column-list-item-footer-tag {
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 10px;
+    letter-spacing: -0.02em;
+    color: #FFFFFF;
+    padding: 5px 4px;
+    background: #59B4D1;
+    border-radius: 2px;
+}
+
+/* Drag And Drop related */

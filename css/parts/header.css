@@ -1,0 +1,11 @@
+.header-title {
+    padding: 36px 0;
+}
+
+.header-title-text {
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 52px;
+    letter-spacing: -0.02em;
+    color: #171717;
+}
