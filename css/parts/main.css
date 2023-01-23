@@ -58,6 +58,24 @@
     border-radius: 4px;
 }
 
+.main-kanban-column-list-item.droppable {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px dashed rgba(0, 0, 0, 0.25);
+    background: none;
+    box-shadow: none;
+}
+
+.main-kanban-column-list-item-icon {
+    max-width: 25px;
+    max-height: 25px;
+}
+
+.main-kanban-column-list-item-icon img {
+    opacity: 0.5;
+}
+
 .main-kanban-column-list-item-header {
     margin-bottom: 10px;
 }
@@ -92,3 +110,11 @@
 }
 
 /* Drag And Drop related */
+.draggable {
+    cursor: move;
+}
+
+.draggable:hover {
+    opacity: 0.5;
+}
+
