@@ -1,0 +1,22 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+body {
+    min-width: 280px;
+    background-color: #C5CFD6;
+    font-family: 'Inter', sans-serif;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.wrapper {
+    /* background: url('../../img/Main-home.png') center no-repeat; */
+}
+
+.container {
+    max-width: 1305px;
+    margin: 0 auto;
+}

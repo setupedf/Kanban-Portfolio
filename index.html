@@ -5,13 +5,55 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kanban | Portfolio</title>
-
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
 
     <script src="js/main.js" defer></script>
 </head>
 <body>
-    
+    <div class="wrapper">
+        <div class="container">
+            <header class="header">
+                <div class="header-title">
+                    <span class="header-title-text">Project Example</span>
+                </div>
+            </header>
+            <main class="main">
+                <div class="main-kanban">
+                    <div class="main-kanban-column">
+                        <div class="main-kanban-column-title">
+                            <span class="main-kanban-column-title-text">🗒️ To Do</span>
+                        </div>
+                        <ul class="main-kanban-column-list">
+                            <li class="main-kanban-column-list-item prototype"></li>
+                        </ul>
+                    </div>
+                    <div class="main-kanban-column">
+                        <div class="main-kanban-column-title">
+                            <span class="main-kanban-column-title-text">💻 In Progress</span>
+                        </div>
+                        <ul class="main-kanban-column-list"></ul>
+                    </div>
+                    <div class="main-kanban-column">
+                        <div class="main-kanban-column-title">
+                            <span class="main-kanban-column-title-text">🖍 Review</span>
+                        </div>
+                        <ul class="main-kanban-column-list"></ul>
+                    </div>
+                    <div class="main-kanban-column">
+                        <div class="main-kanban-column-title">
+                            <span class="main-kanban-column-title-text">🚀 Done</span>
+                        </div>
+                        <ul class="main-kanban-column-list"></ul>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
 </body>
 </html>
