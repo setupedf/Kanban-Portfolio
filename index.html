@@ -29,30 +29,22 @@
                         <div class="main-kanban-column-title">
                             <span class="main-kanban-column-title-text"><span class="main-kanban-column-title-text-emoji">🗒️</span>To Do</span>
                         </div>
-                        <ul class="main-kanban-column-list">
-                            <li class="main-kanban-column-list-item draggable" id="list-item-prototype">
+                        <ul class="main-kanban-column-list" id="main-kanban-column-list_first">
+                            <li class="main-kanban-column-list-item draggable" draggable="true">
                                 <div class="main-kanban-column-list-item-header">
-                                    <span class="main-kanban-column-list-item-header-text">Lorem ipsum</span>
+                                    <span draggable="false" class="main-kanban-column-list-item-header-text">Lorem Ipsum</span>
+                                    <div class="main-kanban-column-list-item-header-delete">
+                                        <img src="img/Main_delete.svg" alt="delete_icon">
+                                    </div>
                                 </div>
                                 <div class="main-kanban-column-list-item-footer">
                                     <div class="main-kanban-column-list-item-footer-img">
-                                        <img src="img/Main-portrait.png" alt="portrait">
+                                        <img draggable="false" src="img/Main-portrait.png" alt="portrait">
                                     </div>
-                                    <span class="main-kanban-column-list-item-footer-tag">Tag</span>
+                                    <span draggable="false" type='text' class="main-kanban-column-list-item-footer-tag">Tag</span>
                                 </div>
                             </li>
-                            <li class="main-kanban-column-list-item draggable" id="list-item-prototype">
-                                <div class="main-kanban-column-list-item-header">
-                                    <span class="main-kanban-column-list-item-header-text">Lorem ipsum</span>
-                                </div>
-                                <div class="main-kanban-column-list-item-footer">
-                                    <div class="main-kanban-column-list-item-footer-img">
-                                        <img src="img/Main-portrait.png" alt="portrait">
-                                    </div>
-                                    <span class="main-kanban-column-list-item-footer-tag">Tag</span>
-                                </div>
-                            </li>
-                            <li class="main-kanban-column-list-item droppable" id="list-item-prototype">
+                            <li class="main-kanban-column-list-item droppable">
                                 <div class="main-kanban-column-list-item-icon">
                                     <img src="img/Main-add_circle.svg" alt="add_icon">
                                 </div>
@@ -64,7 +56,7 @@
                             <span class="main-kanban-column-title-text"><span class="main-kanban-column-title-text-emoji">💻</span>In Progress</span>
                         </div>
                         <ul class="main-kanban-column-list">
-                            <li class="main-kanban-column-list-item droppable" id="list-item-prototype">
+                            <li class="main-kanban-column-list-item droppable">
                                 <div class="main-kanban-column-list-item-icon">
                                     <img src="img/Main-add_circle.svg" alt="add_icon">
                                 </div>
@@ -76,7 +68,7 @@
                             <span class="main-kanban-column-title-text"><span class="main-kanban-column-title-text-emoji">🖍</span>Review</span>
                         </div>
                         <ul class="main-kanban-column-list">
-                            <li class="main-kanban-column-list-item droppable" id="list-item-prototype">
+                            <li class="main-kanban-column-list-item droppable">
                                 <div class="main-kanban-column-list-item-icon">
                                     <img src="img/Main-add_circle.svg" alt="add_icon">
                                 </div>
@@ -88,7 +80,7 @@
                             <span class="main-kanban-column-title-text" id="last-column-header"><span class="main-kanban-column-title-text-emoji">🚀</span>Done</span>
                         </div>
                         <ul class="main-kanban-column-list">
-                            <li class="main-kanban-column-list-item droppable" id="list-item-prototype">
+                            <li class="main-kanban-column-list-item droppable">
                                 <div class="main-kanban-column-list-item-icon">
                                     <img src="img/Main-add_circle.svg" alt="add_icon">
                                 </div>
@@ -97,6 +89,18 @@
                     </div>
                 </div>
             </main>
+            <div class="popup">
+                <div class="popup-content">
+                    <div class="popup-content-close">
+                        <img class="popup-content-close-img" src="img/Popup_close.svg" alt="close_icon">
+                    </div>
+                    <form action="" class="popup-content-form">
+                        <input type="text" class="popup-content-form-input" placeholder="Type task" required>
+                        <input type="text" class="popup-content-form-input" placeholder="Type tag" required>
+                        <button class="popup-content-form-button"><span class="popup-content-form-button-text">Submit</span></button>
+                    </form>
+                </div>
+            </div>
         </div>
     </div>
 </body>

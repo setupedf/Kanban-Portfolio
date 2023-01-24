@@ -4,8 +4,9 @@
 
 body {
     min-width: 280px;
-    background-color: #E1E8ED;
     font-family: 'Inter', sans-serif;
+    background: url('../../img/Main-home.png') center no-repeat, #E1E8ED;
+    height: 100vh;
 }
 
 ul {
@@ -17,11 +18,19 @@ img {
     height: 100%;
 }
 
-.wrapper {
-    /* background: url('../../img/Main-home.png') center no-repeat; */
-}
-
 .container {
     max-width: 1305px;
     margin: 0 auto;
+}
+
+input,
+button {
+    font-family: 'Inter', sans-serif;
+    outline: none;
+    background: none;
+    border: none;
+}
+
+button:hover {
+    cursor: pointer;
 }
