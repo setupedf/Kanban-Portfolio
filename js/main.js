@@ -88,6 +88,10 @@ function createNewCard(event) {
     let inputTaskValue = inputTask.value
     let inputTagValue = inputTag.value
 
+    // Delete previous user values
+    inputTask.value = ''
+    inputTag.value = ''
+
     closePopup()
 
     // Create new empty card
